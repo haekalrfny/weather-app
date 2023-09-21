@@ -56,10 +56,10 @@ const App = () => {
           // ARRAY OF OBJECT
           setShowWeather([
             {
-            type: 'Not Found',
-            img: 'https://cdn-icons-png.flaticon.com/512/4275/4275497.png',
-            }
-          ])
+              type: "Not Found",
+              img: "https://cdn-icons-png.flaticon.com/512/4275/4275497.png",
+            },
+          ]);
         }
         setShowWeather(
           WeatherTypes.filter(
@@ -83,7 +83,7 @@ const App = () => {
             type="text"
             ref={inputRef}
             placeholder="Enter Your Location"
-            className="text-xl border-b p-1 border-gray-200 font-semibold uppercase
+            className="text-xl border-b p-1 border-gray-200 font-semibold uppercase outline-none
         "
           />
           <button onClick={fetchWeather}>
@@ -96,7 +96,7 @@ const App = () => {
         </div>
         <div
           className={`duration-300 delay-75 overflow-hidden ${
-            showWeather ? "h-[27rem" : "h-0"
+            showWeather ? "h-[27rem]" : "h-0"
           }`}
         >
           {loading ? (
