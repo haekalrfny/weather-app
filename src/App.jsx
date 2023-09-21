@@ -76,15 +76,14 @@ const App = () => {
       });
   };
   return (
-    <div className="bg-gray-800 h-screen grid place-items-center">
+    <div className="bg-gray-800 min-h-screen grid place-items-center">
       <div className="bg-white w-96 p-4 rounded-md">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between">
           <input
             type="text"
             ref={inputRef}
             placeholder="Enter Your Location"
-            className="text-xl border-b p-1 border-gray-200 font-semibold uppercase outline-none
-        "
+            className="text-xl border-b p-1 border-gray-200 font-semibold uppercase outline-none mb-2 md:mb-0"
           />
           <button onClick={fetchWeather}>
             <img
